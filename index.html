@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>coffee website </title>
+    <title>coffee website | codingnepal</title>
     <!--Linked Font Awesome for icones-->
     <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -30,36 +30,40 @@ window.onload = () => {
   }, 4000);
 };
     </script>
+<script>
+document.addEventListener("DOMContentLoaded", function () {
+  const menuToggle = document.getElementById("menuToggle");
+  const navMenu = document.getElementById("navMenu");
+
+  menuToggle.addEventListener("click", function () {
+    navMenu.classList.toggle("show");
+    menuToggle.textContent = navMenu.classList.contains("show") ? "✖" : "☰";
+  });
+});
+</script>
 <body>
     <script src="test.js" defer></script>
     <!--heder / navbar-->
  <header>
- 
-    <nav class="navbar section-content">
-        <a href="#" class="nav-logo">
-            <h2 class="logo-text">☕️coffee</h2>
-        </a>
-        <ul class="nav-menu">
-            <li class="nav-item">
-                <a href="#home" class="nav-link">HOME</a>
-            </li>
-            <li class="nav-item">
-                <a href="#about" class="nav-link">About</a>
-            </li>
-            <li class="nav-item">
-                <a href="#menu" class="nav-link">menu</a>
-            </li>
-            <li class="nav-item">
-                <a href="#loc" class="nav-link">location</a>
-            </li>
-            <li class="nav-item">
-                <a href="#gar" class="nav-link">gellery</a>
-            </li>
-            <li class="nav-item">
-                <a href="#cont" class="nav-link">contact</a>
-            </li>
-        </ul>
-    </nav>
+  <nav class="navbar section-content">
+    <!-- شعار -->
+    <a href="#" class="nav-logo">
+      <h2 class="logo-text">☕️coffee</h2>
+    </a>
+
+    <!-- زر القائمة للموبايل -->
+    <div class="menu-toggle" id="menuToggle">☰</div>
+
+    <!-- القائمة -->
+    <ul class="nav-menu" id="navMenu">
+      <li class="nav-item"><a href="#home" class="nav-link">HOME</a></li>
+      <li class="nav-item"><a href="#about" class="nav-link">About</a></li>
+      <li class="nav-item"><a href="#menu" class="nav-link">Menu</a></li>
+      <li class="nav-item"><a href="#loc" class="nav-link">Location</a></li>
+      <li class="nav-item"><a href="#gar" class="nav-link">Gallery</a></li>
+      <li class="nav-item"><a href="#cont" class="nav-link">Contact</a></li>
+    </ul>
+  </nav>
 </header>
     <main id="home">
       <section id="hero">
@@ -225,7 +229,7 @@ window.onload = () => {
       </li>
       <li class="contact-info">
         <i class="fa-solid fa-globe"></i>
-        <p>www.alarzeeg.com</p>
+        <p>www.codingnepalweb.com</p>
       </li>
       </ul>
 <div class="form-box">
@@ -316,7 +320,4 @@ window.onload = () => {
 </body>
 </html>
 
-
     
-
-
